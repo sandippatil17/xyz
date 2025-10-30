@@ -17,8 +17,6 @@ pipeline {
         
         stage('Docker Run Container') {
             steps {
-                sh 'docker stop myappcontainer'
-                sh 'docker rm myappcontainer'
                 sh 'docker run -d --name myappcontainer -p 80:80 myapp'
             }
         }
