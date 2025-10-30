@@ -3,4 +3,4 @@ WORKDIR ./myapp
 RUN rm -rf /usr/share/nginx/html/*
 COPY * /usr/share/nginx/html/
 EXPOSE 80
-CMD ['nginx', '-g', 'deamon off;']
+CMD ["nginx", "-g", "daemon off;"']
